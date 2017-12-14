@@ -1,0 +1,12 @@
+1. 宣言
+  let defaults = UserDefaults.standard
+2. 保存
+  defaults.set(保存したい変数, forKey:"キーワード")
+3. 取り出し
+  defaults.保存した型(forKey: "保存時のキーワード")
+
+保存時
+  defaults.set(内容, forKey:"タイトル") defaults.set(タイトルリスト, forKey:"タグ") defaults.set(タグリスト, forKey"タグリスト")
+取り出し時
+  var tags:[String] = defaults.[string](forKey: "タグリスト") var titles:[String] = defaults.[string](forKey: "タグ")
+  var text:String = defaults.string(forKey: "タイトル")
